@@ -6,6 +6,8 @@ install:
     - pip install pytest pytest-cov
     - pip install mockito
     - pip install coveralls
+    - pip install radon
+
 # command to run tests
 script:
     - py.test --cov . --cov-report term-missing
