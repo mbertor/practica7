@@ -13,6 +13,9 @@ script:
     - py.test --cov . --cov-report term-missing
 after_success:
     - coveralls
-    - radon cc -s -a -e *test*,test*,*test src/.
+    - radon cc src/.
     - radon raw src/.
     - radon mi src/.
+    - radon cc tests/.
+    - radon raw tests/.
+    - radon mi tests/.
