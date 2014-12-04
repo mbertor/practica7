@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.org/mbertor/practica7.svg?branch=master)](https://travis-ci.org/mbertor/practica7)
+[![Coverage Status](https://coveralls.io/repos/mbertor/practica7/badge.png?branch=master)](https://coveralls.io/r/mbertor/practica7?branch=master)
