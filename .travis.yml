@@ -25,3 +25,9 @@ after_success:
     - radon cc tests/.
     - radon raw tests/.
     - radon mi tests/.
+
+notifications:
+  email:
+    recipients:
+      - miguelbermejotorrent@gmail.com
+    on_failure: [always]
