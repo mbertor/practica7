@@ -30,4 +30,4 @@ notifications:
   email:
     recipients:
       - miguelbermejotorrent@gmail.com
-    on_failure: [always]
+    on_failure: [always|never|change] # default: always
