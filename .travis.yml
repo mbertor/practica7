@@ -14,5 +14,5 @@ script:
 after_success:
     - coveralls
     - radon cc -s -a -e *test*,test*,*test src/.
-    - radon raw -s -a -e *test*,test*,*test src/.
-    - radon mi -s -a -e *test*,test*,*test src/.
+    - radon raw src/.
+    - radon mi src/.
