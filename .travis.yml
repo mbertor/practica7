@@ -20,7 +20,7 @@ notifications:
   email:
     recipients:
       - miguelbermejotorrent@gmail.com
-    on_failure: change # [always|never|change] # default: always
+    on_failure: always # [always|never|change] # default: always
 
 
 after_success:
