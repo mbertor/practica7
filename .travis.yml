@@ -1,7 +1,7 @@
 language: python
 python:
     - "2.7"
-# command to install dependencies
+
 install:
     - pip install pytest pytest-cov
     - pip install mockito
@@ -9,19 +9,19 @@ install:
     - pip install radon
     - pip install pep8
 
-notifications:
-  email:
-    recipients:
-      - miguelbermejotorrent@gmail.com
-    on_failure: [always|never|change] # default: always
-
-# command to run tests
 script:
     - py.test --cov . --cov-report term-missing
     - pep8 --first src/.
     - pep8 --first tests/.
     - pep8 --count src/.
     - pep8 --count tests/.
+
+notifications:
+  email:
+    recipients:
+      - miguelbermejotorrent@gmail.com
+    on_failure: change # [always|never|change] # default: always
+
 
 after_success:
     - coveralls
