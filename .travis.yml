@@ -9,6 +9,12 @@ install:
     - pip install radon
     - pip install pep8
 
+notifications:
+  email:
+    recipients:
+      - miguelbermejotorrent@gmail.com
+    on_failure: [always|never|change] # default: always
+
 # command to run tests
 script:
     - py.test --cov . --cov-report term-missing
@@ -26,8 +32,3 @@ after_success:
     - radon raw tests/.
     - radon mi tests/.
 
-notifications:
-  email:
-    recipients:
-      - miguelbermejotorrent@gmail.com
-    on_failure: [always|never|change] # default: always
