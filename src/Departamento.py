@@ -1,11 +1,12 @@
 __author__ = 'Raul'
 
+
 class Departamento():
     """
     Esta clase representa un departamento
     """
 
-    def __init__(self,nombre,id):
+    def __init__(self, nombre, id):
         """
         Constructor departamento
         Crea  un departamento con los argumentos dados.
@@ -14,10 +15,9 @@ class Departamento():
         :param id: id del departamento
         :return: nuevo departamento
         """
-        self.nombre_depto=nombre
-        self.id_depto=id
-        self.lista=[]
-
+        self.nombre_depto= nombre
+        self.id_depto= id
+        self.lista= []
 
     def aniadir_empleado(self,empleado):
         """
@@ -30,7 +30,8 @@ class Departamento():
 
     def get_salario_total(self):
         """
-        Calcula el salario total de todos los empleados que componen el departamento
+        Calcula el salario total de todos los empleados
+        que componen el departamento
 
          :return:int
         """
