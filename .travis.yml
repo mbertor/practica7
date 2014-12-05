@@ -11,10 +11,7 @@ install:
 
 script:
     - py.test --cov . --cov-report term-missing
-    - pep8 --first src/.
-    - pep8 --first tests/.
-    - pep8 --count src/.
-    - pep8 --count tests/.
+
 
 notifications:
   email:
@@ -31,4 +28,8 @@ after_success:
     - radon cc tests/.
     - radon raw tests/.
     - radon mi tests/.
+    - pep8 --first src/.
+    - pep8 --first tests/.
+    - pep8 --count src/.
+    - pep8 --count tests/.
 
