@@ -12,7 +12,7 @@ class Empresa():
         Constructor al que se le pase como argumentos nombre_empresa, cif y razon_social. El constructor  inicializa una lista de departamentos a un valor vacio.
         :param nombre_empresa: Nombre de la empresa
         :param cif: Cif de la empresa
-        :param razon_social: Razon social de la empresa
+        :param razonsocial: Razon social de la empresa
         :return:
         """
         self.nombre = nombre_empresa
